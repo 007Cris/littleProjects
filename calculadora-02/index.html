@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="script/index.js" defer></script>
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <form name="calc">
+            <div class="calcBody">
+
+                <section class="calcBody__output">
+                    <input onkeypress="return onlynumber();" name="visor" type="text" class="calcBody__res"
+                        placeholder="Result" maxlength="14"></input>
+                    <div class="calcBody__btClear">
+                        <input onclick="backspace()" ondblclick="clearScreen()" class="calcBody__buttons"
+                            id="bClear" type="button" value="C">
+                    </div>
+                </section>
+
+                <section class="calcBody__numbers">
+                    <div class="calcBody__zero">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="bFloat" type="button" value=".">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b3" type="button" value="0">
+                        <input onclick="calculate()" class="calcBody__buttons" id="bEqual" 
+                           type="button" value="=">
+                    </div>
+
+                    <div class="calcBody__line1">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b1" type="button" value="1">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b2" type="button" value="2">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b3" type="button" value="3">
+                    </div>
+
+                    <div class="calcBody__line2">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b4" type="button" value="4">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b5" type="button" value="5">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b6" type="button" value="6">
+                    </div>
+                
+                    <div class="calcBody__line3">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b7" type="button" value="7">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b8" type="button" value="8">
+                        <input onclick="numbersInScreen(value)" class="calcBody__buttons" 
+                            id="b9" type="button" value="9">
+                    </div>
+                </section>
+            
+                <section class="calcBody__commands">
+                    <input onclick="operatorsInScreen(value)" class="calcBody__buttons" 
+                        id="bSum" type="button" value="+">
+                    <input onclick="operatorsInScreen(value)" class="calcBody__buttons" 
+                        id="bSub" type="button" value="-">
+                    <input onclick="operatorsInScreen(value)" class="calcBody__buttons" 
+                        id="bMult" type="button" value="*">
+                    <input onclick="operatorsInScreen(value)" class="calcBody__buttons" 
+                        id="bDiv" type="button" value="/">
+                </section>
+            </div>
+        </form>
+    </body>
+</html>

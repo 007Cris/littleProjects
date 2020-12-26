@@ -1,0 +1,141 @@
+body {
+    margin: 0px;
+    padding: 10px;
+    background-color: #636e721a;
+}
+
+.calcBody {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 480px;
+    width: 400px;
+    background-color: #141313f1;
+    border-radius: 8px;
+}
+
+.calcBody__res {
+    position: absolute;
+    width: 220px;
+    border: none;
+    height: 70px;
+    left: 36px;
+    top: 10px;
+    background-color: #2F3332;
+    color: #dfe6e9;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    font-family: sans-serif;
+    font-size: 15pt;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: 0.75s;
+}
+
+.calcBody__btClear {
+    position: absolute;
+    width: 70px;
+    height: 80px;
+    left: 73%;
+    top: 20px;
+}
+
+.calcBody__buttons {
+    border: none;
+    width: 70px;
+    height: 70px;
+    background-color: #2F3332;   
+    color: white;
+    border-radius: 5px;
+}
+
+.calcBody__buttons:hover {
+    background-color: #dfe6e944;
+    cursor: pointer;
+}
+
+.calcBody__numbers {
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: 47%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.calcBody__commands {
+    position: absolute;
+    left: 85%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 95px;
+    height: 340px;
+}
+
+.calcBody__zero {
+    align-items: center;
+    position: absolute;
+    top: 85%;
+    align-items: center;
+}
+
+.calcBody__line1 {
+    align-items: center;
+    position: absolute;
+    top: 60%;
+}
+
+.calcBody__line2 {
+    align-items: center;
+    position: absolute;
+    top: 35%;
+}
+
+.calcBody__line3 {
+    align-items: center;
+    position: absolute;
+    top: 10%;
+}
+
+#bClear {
+    position: absolute;
+    align-items: center;
+    background-color: #ff2a2a67;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+#bClear:hover {
+    background-color: #ff0000b9;
+}
+
+#bSum {
+    position: relative;
+    top: 4%;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+#bSub {
+    position: relative;
+    top: 10%;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+#bMult {
+    position: relative;
+    top: 15%;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+#bDiv {
+    position: relative;
+    top: 20%;
+    font-size: 18pt;
+    font-weight: 500;
+}
