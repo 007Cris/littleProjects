@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/index.js"></script>
+    <title>Verificador de CPF</title>
+</head>
+<body>
+    <form name="validator">
+        <section class="principalBox">
+            <p id="boas-vindas">Verificador de CPF</p>
+            <div class="principalBox__content">
+                <input name="inputCPF" onkeypress="return onlynumber();" maxlength="11" class="principalBox__cpf" type="text" placeholder="CPF" autocomplete="off">
+                <input onclick="verify()" class="principalBox__verify" type="submit" value="Verificar">
+            </div>
+        </section>
+    </form> 
+</body>
+</html>
